@@ -1,0 +1,681 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ecuadorian Line | Reefer shipping, South America to Northern Europe</title>
+<meta name="description" content="Five Danish-built Island-class reefer ships linking Ecuador, Peru and Colombia with Vlissingen and Hamburg. Fresh fruit north, European cargo south.">
+<link rel="icon" href="assets/el-logo-192.png">
+<link rel="apple-touch-icon" href="assets/el-logo-192.png">
+<link rel="canonical" href="https://ecuadorianlines.com/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Ecuadorian Line">
+<meta property="og:description" content="Five ice-class reefer ships linking Ecuador, Peru and Colombia with Northern Europe.">
+<meta property="og:image" content="https://ecuadorianlines.com/assets/hero-albemarle.jpg">
+<meta property="og:url" content="https://ecuadorianlines.com/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,500;0,600;0,700;0,800;1,800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#16236b; --navy-2:#0f1a55; --ink-deep:#070c26; --red:#e2302a; --red-2:#ff4a3d; --yellow:#f6c915;
+  --paper:#f5f6fa; --white:#fff; --text:#141a33; --muted:#5d6584; --line:#e1e4ee;
+  --on-dark:#eef1fb; --on-dark-muted:#a3abc9; --dark-line:rgba(255,255,255,.12);
+  --sea:#0d1747; --land:#1c2760; --land-stroke:#2c3a82;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){ --paper:#0b112e; --white:#0f1638; --text:#eef1fb; --muted:#a3abc9; --line:#252f60; }
+}
+:root[data-theme="dark"]{ --paper:#0b112e; --white:#0f1638; --text:#eef1fb; --muted:#a3abc9; --line:#252f60; }
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--ink-deep);color:var(--text);font:16.5px/1.65 Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3{font-family:"Barlow Condensed",sans-serif;line-height:.98;margin:0;letter-spacing:.005em;text-transform:uppercase}
+h2{font-size:clamp(40px,6.2vw,78px);font-weight:800}
+h3{font-size:26px;font-weight:700}
+.wrap{max-width:1240px;margin:0 auto;padding:0 28px}
+.kicker{display:inline-flex;align-items:center;gap:10px;font:600 12.5px/1 Inter;letter-spacing:.22em;text-transform:uppercase;color:var(--red);margin-bottom:20px}
+.kicker::before{content:"";width:28px;height:2px;background:currentColor}
+.lede{font-size:19px;max-width:620px;margin:22px 0 0;color:var(--muted)}
+section{padding:120px 0;position:relative}
+.light{background:var(--paper);color:var(--text)}
+.white{background:var(--white);color:var(--text)}
+.dark{background:var(--ink-deep);color:var(--on-dark)}
+.dark .lede{color:var(--on-dark-muted)}
+
+/* reveal */
+.js .rv{opacity:0;transform:translateY(28px);transition:opacity .9s ease,transform .9s cubic-bezier(.2,.7,.2,1)}
+.js .rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}.hero-media img{animation:none!important}}
+
+/* header */
+header.top{position:fixed;top:0;left:0;right:0;z-index:30;color:#fff;transition:background .3s,top .3s,box-shadow .3s}
+header.top.solid{top:0;background:rgba(7,12,38,.92);backdrop-filter:blur(12px);box-shadow:0 1px 0 var(--dark-line)}
+header.top .wrap{display:flex;align-items:center;justify-content:space-between;height:76px}
+.brand{display:flex;align-items:center;gap:13px;text-decoration:none}
+.brand img{width:44px;height:44px;border-radius:2px;box-shadow:0 2px 10px rgba(0,0,0,.3)}
+.brand b{font:italic 800 26px/1 "Barlow Condensed";letter-spacing:.02em}
+.brand small{display:block;font:600 9.5px/1.2 Inter;letter-spacing:.2em;opacity:.65;margin-top:4px}
+nav.main{display:flex;gap:30px;align-items:center}
+nav.main a{text-decoration:none;font-weight:500;font-size:14.5px;opacity:.82;transition:opacity .2s}
+nav.main a:hover{opacity:1}
+.btn{display:inline-flex;align-items:center;gap:10px;background:var(--red);color:#fff;text-decoration:none;font:600 15px Inter;padding:15px 26px;border-radius:2px;border:0;cursor:pointer;transition:background .2s,transform .2s}
+.btn:hover{background:var(--red-2);transform:translateY(-1px)}
+.btn .arr{transition:transform .2s}.btn:hover .arr{transform:translateX(4px)}
+.btn.line{background:transparent;box-shadow:inset 0 0 0 1.5px rgba(255,255,255,.55)}
+.btn.line:hover{background:rgba(255,255,255,.08)}
+nav.main .btn{padding:10px 18px;font-size:14px;opacity:1}
+.menu-toggle{display:none;background:none;border:0;color:#fff;font-size:28px;cursor:pointer}
+
+/* hero */
+.hero{position:relative;height:100vh;min-height:640px;max-height:1000px;color:#fff;overflow:hidden;padding:0;display:flex;align-items:flex-end}
+.hero-media{position:absolute;inset:0}
+.hero-media img,.hero-media video{width:100%;height:100%;object-fit:cover;object-position:62% 50%}
+.hero-media video{transform:scale(1.03)}
+.hero-media img{animation:drift 26s ease-in-out infinite alternate}
+@keyframes drift{from{transform:scale(1.04)}to{transform:scale(1.14) translateX(-1.5%)}}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(7,12,38,.55) 0%,rgba(7,12,38,0) 28%,rgba(7,12,38,.15) 55%,rgba(7,12,38,.92) 100%),linear-gradient(90deg,rgba(7,12,38,.7) 0%,rgba(7,12,38,0) 60%)}
+.hero .wrap{position:relative;z-index:2;width:100%;padding-bottom:70px}
+.hero h1{font-size:clamp(54px,10.5vw,150px);font-weight:800;line-height:.86;max-width:1100px}
+.hero h1 span{display:block}
+.hero h1 .r{color:var(--red-2)}
+.hero-sub{display:flex;justify-content:space-between;align-items:flex-end;gap:40px;margin-top:34px;flex-wrap:wrap}
+.hero p{font-size:19px;max-width:520px;margin:0;color:rgba(255,255,255,.86)}
+.hero .ctas{display:flex;gap:14px;flex-wrap:wrap}
+.scroll-cue{position:absolute;right:28px;bottom:28px;z-index:2;writing-mode:vertical-rl;font:600 11px Inter;letter-spacing:.3em;opacity:.6;text-transform:uppercase}
+
+/* stats */
+.stats{background:var(--ink-deep);color:#fff;padding:0;border-bottom:1px solid var(--dark-line)}
+.stats .wrap{display:grid;grid-template-columns:repeat(4,1fr)}
+.stat{padding:44px 28px 40px;border-left:1px solid var(--dark-line)}
+.stat:first-child{border-left:0;padding-left:0}
+.stat b{display:block;font:800 clamp(44px,5vw,68px)/1 "Barlow Condensed";color:#fff}
+.stat b em{font-style:normal;color:var(--yellow)}
+.stat span{display:block;margin-top:10px;font-size:14px;color:var(--on-dark-muted);max-width:220px}
+
+/* service legs */
+.legs{display:grid;grid-template-columns:1fr 1fr;gap:4px;margin-top:64px}
+.leg{position:relative;min-height:560px;overflow:hidden;color:#fff;display:flex;align-items:flex-end}
+.leg img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform 1.2s cubic-bezier(.2,.7,.2,1)}
+.leg:hover img{transform:scale(1.05)}
+.leg::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(7,12,38,0) 25%,rgba(7,12,38,.93) 100%)}
+.leg .in{position:relative;z-index:1;padding:40px}
+.leg .dir{font:600 12.5px Inter;letter-spacing:.2em;text-transform:uppercase;color:var(--yellow)}
+.leg h3{font-size:clamp(36px,4vw,54px);margin:10px 0 12px;font-weight:800}
+.leg p{margin:0 0 20px;color:rgba(255,255,255,.82);max-width:460px}
+.tags{display:flex;flex-wrap:wrap;gap:8px;list-style:none;padding:0;margin:0}
+.tags li{border:1px solid rgba(255,255,255,.35);border-radius:40px;padding:5px 14px;font-size:13.5px;font-weight:500;backdrop-filter:blur(4px);background:rgba(255,255,255,.06)}
+
+/* route */
+#route{background:var(--navy-2);color:var(--on-dark)}
+#route .lede{color:var(--on-dark-muted)}
+.route-grid{display:grid;grid-template-columns:1.6fr 1fr;gap:48px;margin-top:56px;align-items:start}
+.mapbox{background:var(--sea);border:1px solid var(--dark-line);overflow:hidden;position:relative}
+.mapbox svg{display:block;width:100%;height:auto}
+.map-legend{position:absolute;right:14px;bottom:12px;display:flex;gap:16px;font-size:12.5px;font-weight:600;background:rgba(7,12,38,.85);color:#fff;padding:7px 12px;border:1px solid var(--dark-line)}
+.map-legend i{display:inline-block;width:18px;height:3px;vertical-align:middle;margin-right:6px}
+.map-loading{padding:140px 20px;text-align:center;color:var(--on-dark-muted)}
+.toggle{display:inline-flex;border:1px solid var(--dark-line);margin-bottom:28px}
+.toggle button{background:none;border:0;padding:11px 18px;font:600 14px Inter;color:var(--on-dark-muted);cursor:pointer}
+.toggle button[aria-pressed="true"]{background:var(--red);color:#fff}
+ol.rotation{list-style:none;padding:0;margin:0;position:relative}
+ol.rotation::before{content:"";position:absolute;left:9px;top:8px;bottom:8px;width:2px;background:var(--dark-line)}
+ol.rotation li{position:relative;padding:0 0 17px 38px}
+ol.rotation li::before{content:"";position:absolute;left:2px;top:6px;width:12px;height:12px;border-radius:50%;background:var(--navy-2);border:2.5px solid var(--c,var(--red))}
+ol.rotation li.hub::before{background:var(--yellow);border-color:var(--yellow)}
+ol.rotation li b{display:block;font:700 21px/1.2 "Barlow Condensed";text-transform:uppercase;letter-spacing:.03em}
+ol.rotation li span{font-size:14px;color:var(--on-dark-muted)}
+ol.rotation li.active b{color:var(--yellow)}
+.note{font-size:13px;color:var(--on-dark-muted);margin-top:10px}
+
+/* cargo mosaic */
+.mosaic{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:240px;gap:4px;margin-top:60px}
+.tile{position:relative;overflow:hidden;color:#fff}
+.tile img{width:100%;height:100%;object-fit:cover;transition:transform 1s cubic-bezier(.2,.7,.2,1)}
+.tile:hover img{transform:scale(1.06)}
+.tile figcaption{position:absolute;left:0;right:0;bottom:0;padding:40px 18px 14px;background:linear-gradient(180deg,transparent,rgba(7,12,38,.88));font:700 19px/1.1 "Barlow Condensed";text-transform:uppercase;letter-spacing:.03em}
+.tile figcaption small{display:block;font:500 12.5px Inter;text-transform:none;letter-spacing:0;opacity:.8;margin-top:3px}
+.tile.w2{grid-column:span 2}.tile.h2{grid-row:span 2}
+figure{margin:0}
+.caps{display:grid;grid-template-columns:repeat(4,1fr);gap:40px;margin-top:80px}
+.caps div:nth-child(4){border-color:#8fc6ff}
+.caps div{border-top:2px solid var(--text);padding-top:22px}
+.caps div:nth-child(2){border-color:var(--red)}
+.caps div:nth-child(3){border-color:var(--yellow)}
+.caps p{color:var(--muted);margin:12px 0 0}
+
+/* fleet */
+#fleet{background:var(--ink-deep);color:var(--on-dark)}
+.fleet-head{display:grid;grid-template-columns:1.2fr 1fr;gap:60px;align-items:end}
+.spec{display:grid;grid-template-columns:1fr 1fr;gap:0;border-top:1px solid var(--dark-line)}
+.spec div{padding:16px 0;border-bottom:1px solid var(--dark-line)}
+.spec dt{font-size:12.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--on-dark-muted)}
+.spec dd{margin:4px 0 0;font:700 22px/1.1 "Barlow Condensed";text-transform:uppercase}
+.fleet{display:grid;grid-template-columns:repeat(5,1fr);gap:4px;margin-top:64px}
+.ship{position:relative;aspect-ratio:4/5;overflow:hidden;background:var(--navy-2)}
+#fleet .lede{color:var(--on-dark-muted)}
+.ship img{width:100%;height:100%;object-fit:cover;transition:transform 1s cubic-bezier(.2,.7,.2,1),filter .4s;filter:saturate(.9)}
+.ship:hover img{transform:scale(1.07);filter:saturate(1.1)}
+.ship::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(7,12,38,0) 45%,rgba(7,12,38,.92))}
+.ship .lbl{position:absolute;left:18px;right:18px;bottom:18px;z-index:1}
+.ship .no{font:600 12px Inter;letter-spacing:.2em;color:var(--yellow)}
+.ship h3{font-size:30px;font-weight:800;margin-top:4px}
+.ship .ph{width:100%;height:100%;display:grid;place-items:center;background:radial-gradient(circle at 50% 40%,#1b2b7c,#0a1240)}
+.ship .ph svg{width:70%;opacity:.55}
+.ship .ph-note{position:absolute;top:16px;left:18px;z-index:1;font-size:12px;color:var(--on-dark-muted)}
+.fleet-foot{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;margin-top:22px;font-size:13.5px;color:var(--on-dark-muted)}
+
+/* heritage */
+#heritage{background:var(--paper)}
+.her-intro{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:end}
+.timeline{margin-top:80px;display:grid;gap:0}
+.t-row{display:grid;grid-template-columns:200px 1fr 1fr;gap:44px;padding:40px 0;border-top:1px solid var(--line);align-items:center}
+.t-row:last-child{border-bottom:1px solid var(--line)}
+.t-year{font:800 clamp(56px,6vw,84px)/1 "Barlow Condensed";color:var(--red)}
+.t-row h3{font-size:30px;margin-bottom:10px}
+.t-row p{margin:0;color:var(--muted)}
+.t-img{aspect-ratio:16/10;overflow:hidden;background:var(--line)}
+.t-img img{width:100%;height:100%;object-fit:cover;filter:grayscale(.15) contrast(1.03)}
+.t-img figcaption{font-size:12px;color:var(--muted);margin-top:8px}
+.t-row figure{display:flex;flex-direction:column}
+.t-row figure .t-img{margin-bottom:0}
+.archive{display:grid;grid-template-columns:repeat(3,1fr);gap:4px;margin-top:56px}
+.archive img{width:100%;aspect-ratio:4/3;object-fit:cover;filter:grayscale(.2)}
+.archive figcaption{font-size:12px;color:var(--muted);margin-top:8px}
+.mgmt{display:grid;grid-template-columns:1fr 1fr;gap:0;margin-top:96px;background:var(--navy-2)}
+.mgmt img{width:100%;height:100%;object-fit:cover;min-height:420px}
+.mgmt .txt{padding:56px}
+.mgmt h3{font-size:clamp(34px,3.6vw,48px);font-weight:800;margin-bottom:16px}
+.mgmt p{color:var(--on-dark-muted);margin:0 0 22px}
+.mgmt ul{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:1fr 1fr;gap:12px 24px}
+.mgmt li{padding-left:18px;position:relative;font-weight:500}
+.mgmt li::before{content:"";position:absolute;left:0;top:10px;width:8px;height:2px;background:var(--yellow)}
+@media (max-width:1020px){.mgmt{grid-template-columns:1fr}.mgmt img{min-height:280px}}
+@media (max-width:620px){.mgmt .txt{padding:32px 20px}.mgmt ul{grid-template-columns:1fr}.archive{grid-template-columns:1fr}}
+.sources{margin-top:28px;font-size:12.5px;color:var(--muted);max-width:900px}
+
+/* cta band */
+.band{position:relative;padding:150px 0;color:#fff;overflow:hidden;text-align:center}
+.band img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.band::after{content:"";position:absolute;inset:0;background:rgba(7,12,38,.66)}
+.band .wrap{position:relative;z-index:1}
+.band h2{font-size:clamp(44px,7vw,96px)}
+.band p{font-size:19px;max-width:560px;margin:20px auto 34px;color:rgba(255,255,255,.85)}
+
+/* contact */
+#contact{background:var(--white)}
+.contact{display:grid;grid-template-columns:1fr 1.25fr;gap:72px}
+.offices{margin-top:40px;display:grid;gap:22px}
+.office{border-left:3px solid var(--red);padding-left:18px}
+.office b{display:block;font:700 22px/1.2 "Barlow Condensed";text-transform:uppercase}
+.office span{color:var(--muted);font-size:14.5px}
+form{display:grid;grid-template-columns:1fr 1fr;gap:18px;align-content:start}
+form .full{grid-column:span 2}
+label{display:block;font-size:12.5px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;margin-bottom:7px;color:var(--muted)}
+input,select,textarea{width:100%;font:16px Inter;padding:14px 0;border:0;border-bottom:1.5px solid var(--line);background:transparent;color:var(--text);border-radius:0}
+select{padding-right:10px}
+input:focus,select:focus,textarea:focus{outline:0;border-bottom-color:var(--red)}
+textarea{min-height:96px;resize:vertical}
+.form-msg{grid-column:span 2;font-size:14.5px;color:var(--muted);margin:0}
+
+footer{background:var(--ink-deep);color:var(--on-dark);padding:56px 0 40px;font-size:13.5px;border-top:1px solid var(--dark-line)}
+footer .wrap{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;align-items:center}
+footer p{margin:0;color:var(--on-dark-muted)}
+footer p b{color:#fff;font-weight:600}
+.social{display:flex;gap:10px}
+.social a{display:grid;place-items:center;width:42px;height:42px;border:1px solid var(--dark-line);color:#fff;transition:background .2s,border-color .2s}
+.social a:hover{background:var(--red);border-color:var(--red)}
+.group-line{margin-top:28px;padding-top:24px;border-top:1px solid var(--dark-line)}
+
+@media (max-width:1020px){
+  nav.main{display:none;position:absolute;top:76px;left:0;right:0;background:rgba(7,12,38,.97);flex-direction:column;gap:0;padding:8px 0 18px}
+  nav.main.open{display:flex}
+  nav.main a{padding:13px 28px;width:100%}
+  nav.main .btn{width:auto;margin:10px 28px 0}
+  .menu-toggle{display:block}
+  .stats .wrap{grid-template-columns:1fr 1fr}
+  .stat{border-left:0;padding-left:0;border-top:1px solid var(--dark-line)}
+  .stat:nth-child(-n+2){border-top:0}
+  .legs,.route-grid,.caps,.contact,.fleet-head,.her-intro{grid-template-columns:1fr}
+  .fleet{grid-template-columns:repeat(3,1fr)}
+  .mosaic{grid-template-columns:repeat(2,1fr)}
+  .t-row{grid-template-columns:120px 1fr;gap:24px}
+  .t-row figure{grid-column:2}
+}
+@media (max-width:620px){
+  .wrap{padding:0 16px}
+  section{padding:84px 0}
+  header.top .wrap{height:66px}
+  nav.main{top:66px}
+  .brand small{display:none}
+  .brand b{font-size:22px}
+  .hero{min-height:600px}
+  .hero .wrap{padding-bottom:48px}
+  .scroll-cue{display:none}
+  .stat{padding:28px 0 26px}
+  .leg{min-height:460px}
+  .leg .in{padding:26px 20px}
+  .fleet{grid-template-columns:1fr 1fr}
+  .fleet .ship:first-child{grid-column:span 2;aspect-ratio:4/3}
+  .mosaic{grid-auto-rows:190px}
+  .tile.w2{grid-column:span 2}
+  .t-row{grid-template-columns:1fr;gap:14px;padding:30px 0}
+  .t-row figure{grid-column:1}
+  form{grid-template-columns:1fr}
+  form .full,.form-msg{grid-column:span 1}
+  .band{padding:100px 0}
+}
+</style>
+</head>
+<body>
+
+
+<header class="top" id="hdr">
+  <div class="wrap">
+    <a class="brand" href="#top">
+      <img src="assets/el-logo-192.png" alt="Ecuadorian Line logo">
+      <span><b>ECUADORIAN LINE</b><small>THE ECUADORIAN SEA CARRIERS S.A.</small></span>
+    </a>
+    <button class="menu-toggle" aria-label="Menu" aria-expanded="false">☰</button>
+    <nav class="main">
+      <a href="#service">Service</a>
+      <a href="#route">Route</a>
+      <a href="#cargo">Cargo</a>
+      <a href="#fleet">Fleet</a>
+      <a href="#heritage">Heritage</a>
+      <a class="btn" href="#contact">Book space</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <div class="hero-media">
+    <video id="hero-video" muted loop playsinline preload="none" poster="assets/hero-poster.jpg" aria-label="Albemarle Island under way, sailing into the sunset"></video>
+  </div>
+  <div class="wrap">
+    <div class="kicker" style="color:var(--yellow)">Specialty reefer shipping since 1975</div>
+    <h1><span>From the Pacific</span><span class="r">to Northern Europe.</span></h1>
+    <div class="hero-sub">
+      <p>Five Danish-built reefer ships on a fixed loop between Ecuador, Peru, Colombia and the ports of Vlissingen and Hamburg. Fruit goes north and European cargo comes back south.</p>
+      <div class="ctas">
+        <a class="btn" href="#contact">Request a quote <span class="arr">→</span></a>
+        <a class="btn line" href="#route">See the rotation</a>
+      </div>
+    </div>
+  </div>
+  <div class="scroll-cue">Scroll</div>
+</section>
+
+<div class="stats">
+  <div class="wrap">
+    <div class="stat rv"><b>5</b><span>Island-class reefer ships in service</span></div>
+    <div class="stat rv"><b><em>DK</em></b><span>Built by Danyard in Denmark to a purpose-made fruit design</span></div>
+    <div class="stat rv"><b>1975</b><span>The year our founder bought his first reefer ship</span></div>
+    <div class="stat rv"><b>2<em>×</em></b><span>Loaded both ways: fruit north, European cargo south</span></div>
+  </div>
+</div>
+
+<section id="service" class="light">
+  <div class="wrap">
+    <div class="rv">
+      <div class="kicker">The service</div>
+      <h2>One loop.<br>Full both ways.</h2>
+      <p class="lede">Our ships leave Europe with European goods, discharge in the Caribbean and along the Pacific coast, then load fresh fruit for the run back to Vlissingen and Hamburg.</p>
+    </div>
+  </div>
+  <div class="wrap" style="max-width:1400px">
+    <div class="legs">
+      <article class="leg rv">
+        <img src="assets/hero-albemarle.jpg" alt="Albemarle Island alongside at sunset" style="object-position:70% 50%">
+        <div class="in">
+          <div class="dir">Northbound · South America → Europe</div>
+          <h3>Fresh fruit</h3>
+          <p>Loaded in Ecuador and Peru and held at the right temperature all the way to the quay in Northern Europe.</p>
+          <ul class="tags"><li>Bananas</li><li>Avocados</li><li>Blueberries</li><li>Grapes</li><li>Mangoes</li><li>Frozen cargo</li></ul>
+        </div>
+      </article>
+      <article class="leg rv">
+        <img src="assets/duncan.jpg" alt="Duncan Island loaded with machinery and vehicles on deck">
+        <div class="in">
+          <div class="dir">Southbound · Europe → Caribbean &amp; Pacific</div>
+          <h3>European cargo</h3>
+          <p>Food and drink, vehicles, machinery and project cargo for the Caribbean, Colombia, Ecuador and Peru.</p>
+          <ul class="tags"><li>Wine</li><li>Olive oil</li><li>European produce</li><li>Trucks &amp; cars</li><li>Heavy machinery</li><li>Project cargo</li></ul>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="route">
+  <div class="wrap">
+    <div class="rv">
+      <div class="kicker" style="color:var(--yellow)">Rotation</div>
+      <h2>Port by port</h2>
+      <p class="lede">South through the Caribbean and the Panama Canal down to Peru. North from Paita straight back to Europe, with transshipment through Ecuador for cargo moving on.</p>
+    </div>
+    <div class="route-grid">
+      <div class="mapbox rv" id="map"><div class="map-loading">Loading map…</div></div>
+      <div class="rv">
+        <div class="toggle" role="group" aria-label="Direction">
+          <button type="button" data-dir="south" aria-pressed="true">Southbound</button>
+          <button type="button" data-dir="north" aria-pressed="false">Northbound</button>
+        </div>
+        <ol class="rotation" id="rotation"></ol>
+        <p class="note">Port order and call frequency are indicative. Contact us for the current sailing schedule.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="cargo" class="white">
+  <div class="wrap">
+    <div class="rv">
+      <div class="kicker">What we carry</div>
+      <h2>If it fits the hold,<br>it travels.</h2>
+      <p class="lede">Each Island-class ship combines refrigerated holds for palletized fruit, deck space for reefer and dry containers, and its own cranes. That mix lets us take cargo container ships turn away.</p>
+    </div>
+    <div class="mosaic">
+      <figure class="tile w2 h2 rv"><img src="assets/cargo-lift.jpg" alt="Vehicle crate lifted aboard by ship's crane, containers on deck"><figcaption>Lifted with our own cranes<small>No shore gantries needed</small></figcaption></figure>
+      <figure class="tile rv"><img src="assets/cargo-frozen.jpg" alt="Frozen cargo stowed in a refrigerated hold"><figcaption>Frozen &amp; chilled<small>Temperature-controlled holds</small></figcaption></figure>
+      <figure class="tile rv"><img src="assets/cargo-bags.jpg" alt="Palletized bagged produce in the hold"><figcaption>Palletized produce</figcaption></figure>
+      <figure class="tile rv"><img src="assets/cargo-excavators.jpg" alt="Excavators stowed on deck"><figcaption>Heavy machinery</figcaption></figure>
+      <figure class="tile rv"><img src="assets/cargo-trucks.jpg" alt="Tractor units stowed in the hold"><figcaption>Trucks &amp; tractor units</figcaption></figure>
+      <figure class="tile w2 rv"><img src="assets/cargo-combines.jpg" alt="Combine harvesters lashed on deck"><figcaption>Agricultural equipment</figcaption></figure>
+      <figure class="tile rv"><img src="assets/cargo-car.jpg" alt="Car in a cage being loaded into the hold"><figcaption>Vehicles</figcaption></figure>
+      <figure class="tile rv"><img src="assets/cargo-truck.jpg" alt="Dump truck stowed in the hold"><figcaption>Project cargo</figcaption></figure>
+    </div>
+    <div class="caps">
+      <div class="rv"><h3>Cold chain below deck</h3><p>Insulated, temperature-controlled holds carry palletized fruit and frozen cargo, with reefer plugs for containers on deck.</p></div>
+      <div class="rv"><h3>Works any berth</h3><p>Ship's cranes load and discharge at ports and terminals without container gantries, including smaller Caribbean and Pacific ports.</p></div>
+      <div class="rv"><h3>Direct to the market</h3><p>A dedicated fruit service into Vlissingen and Hamburg, close to the distribution centers of Northern Europe.</p></div>
+      <div class="rv"><h3>Ice class, all five</h3><p>Every Island-class ship is ice-strengthened, so fruit keeps moving to North Sea and Baltic ports through the winter, when ice closes them to ordinary ships.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="fleet">
+  <div class="wrap">
+    <div class="fleet-head">
+      <div class="rv">
+        <div class="kicker" style="color:var(--yellow)">The fleet</div>
+        <h2>The Island class</h2>
+        <p class="lede">Five sister ships named after islands of the Galápagos. Designed for fruit, built in Denmark, run from our headquarters in Antwerp.</p>
+      </div>
+      <dl class="spec rv">
+        <div><dt>Ships</dt><dd>5 sisters</dd></div>
+        <div><dt>Builder</dt><dd>Danyard, Denmark</dd></div>
+        <div><dt>Type</dt><dd>Specialty reefer</dd></div>
+        <div><dt>Delivered</dt><dd>Mid-1990s</dd></div>
+        <div><dt>Trading area</dt><dd>North Sea &amp; Baltic</dd></div>
+        <div><dt>Gear</dt><dd>Own cranes</dd></div>
+        <div><dt>Ice class</dt><dd>All five</dd></div>
+      </dl>
+    </div>
+  </div>
+  <div class="wrap" style="max-width:1400px">
+    <div class="fleet">
+      <article class="ship rv"><img src="assets/albemarle.jpg" alt="Albemarle Island alongside in Vlissingen" style="object-position:72% 60%"><div class="lbl"><div class="no">01</div><h3>Albemarle Island</h3></div></article>
+      <article class="ship rv"><img src="assets/barrington.jpg" alt="Barrington Island with a tug at dusk" style="object-position:72% 50%"><div class="lbl"><div class="no">02</div><h3>Barrington Island</h3></div></article>
+      <article class="ship rv">
+        <div class="ph"><svg viewBox="0 0 200 60" fill="none" stroke="#fff" stroke-width="2"><path d="M8 38h176l-14 16H22z"/><path d="M30 38V26h22v12M142 38V18h18v20M150 18V8"/><path d="M70 38l10-22M100 38l10-22M126 38l-6-22"/></svg></div>
+        <div class="lbl"><div class="no">03</div><h3>Charles Island</h3></div>
+      </article>
+      <article class="ship rv"><img src="assets/duncan.jpg" alt="Duncan Island alongside with cargo on deck" style="object-position:30% 50%"><div class="lbl"><div class="no">04</div><h3>Duncan Island</h3></div></article>
+      <article class="ship rv"><img src="assets/hood.jpg" alt="Hood Island alongside in port" style="object-position:68% 65%"><div class="lbl"><div class="no">05</div><h3>Hood Island</h3></div></article>
+    </div>
+    <div class="fleet-foot"><span>Headquarters, fleet and crew management: Antwerp, Belgium.</span><span>Built by Danyard, Denmark.</span></div>
+  </div>
+  <div class="wrap">
+    <div class="mgmt rv">
+      <img src="assets/night-aerial.jpg" alt="Island-class reefer ship working cargo at night">
+      <div class="txt">
+        <div class="kicker" style="color:var(--yellow)">Ship management</div>
+        <h3>We own them.<br>We run them.</h3>
+        <p>Ecuadorian Line manages its own ships from Antwerp. We do the crewing, the technical work and the paperwork ourselves, so one team answers for every ship.</p>
+        <ul>
+          <li>Crew management</li>
+          <li>Technical management</li>
+          <li>Maintenance &amp; dry-docking</li>
+          <li>Safety &amp; compliance</li>
+          <li>Port agency &amp; operations</li>
+          <li>Voyage planning</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="heritage">
+  <div class="wrap">
+    <div class="her-intro">
+      <div class="rv">
+        <div class="kicker">Heritage</div>
+        <h2>Five decades<br>on the reefer trade</h2>
+      </div>
+      <p class="lede rv">Ecuadorian Line goes back to Luis Noboa Naranjo (1916–1994). He started exporting Ecuadorian bananas in the late 1940s, and in the 1970s he began carrying them in his own ships. Today Ecuadorian Line is a proud member of the Noboa Corporation.</p>
+    </div>
+    <div class="timeline">
+      <div class="t-row rv">
+        <div class="t-year">1960</div>
+        <div><h3>The Antwerp connection</h3><p>From 1960 the Antwerp importer Léon Van Parys takes Noboa fruit every week, opening the door to Northern Europe. The relationship grows into ownership, and Antwerp becomes the group's European base.</p></div>
+      </div>
+      <div class="t-row rv">
+        <div class="t-year">1975</div>
+        <div><h3>The first ship: <em>Bonita</em></h3><p>The founder buys his first refrigerated ship, the <em>Bering Core</em>, and renames it <em>Bonita</em>. She was later lost in the English Channel.</p></div>
+        <figure><div class="t-img"><img src="assets/hist-bonita-terminal.jpg" alt="The reefer ship Bonita at a refrigerated terminal, 1970s"></div><figcaption>The <em>Bonita</em> at a US reefer terminal, 1970s. Family archive.</figcaption></figure>
+      </div>
+      <div class="t-row rv">
+        <div class="t-year">1979</div>
+        <div><h3>Ecuador's own reefer line</h3><p>He announces Ecuador's first private refrigerated shipping line. In January 1979 the <em>Provincia de El Oro</em>, his first Ecuadorian-flag ship, opens the Guayaquil–New York route.</p></div>
+      </div>
+      <div class="t-row rv">
+        <div class="t-year">1989</div>
+        <div><h3>Building new ships</h3><p>The <em>Atlantic Ocean</em> is launched at the Uljanik shipyard in Pula as the fleet keeps growing. By 1994 the group runs 18 ships.</p></div>
+        <figure><div class="t-img"><img src="assets/hist-1989-uljanik.jpg" alt="Shipyard workers at the launch of the Atlantic Ocean, Uljanik, Pula, 1989"></div><figcaption>Launch day at Uljanik, Pula, 1989. Family archive.</figcaption></figure>
+      </div>
+      <div class="t-row rv">
+        <div class="t-year">1993</div>
+        <div><h3>The Island class</h3><p>Ahead of new European import rules he orders five purpose-built reefers from Danyard in Denmark: Albemarle, Barrington, Charles, Duncan and Hood Island. The first, <em>Albemarle Island</em>, is launched in 1993.</p></div>
+        <figure><div class="t-img"><img src="assets/albemarle.jpg" alt="Albemarle Island alongside in Vlissingen"></div><figcaption><em>Albemarle Island</em> today.</figcaption></figure>
+      </div>
+      <div class="t-row rv">
+        <div class="t-year">Today</div>
+        <div><h3>Still on the run</h3><p>All five Islands are still in service on the reefer trade between the west coast of South America and Northern Europe.</p></div>
+        <figure><div class="t-img"><img src="assets/night-aerial.jpg" alt="Island-class reefer ship working cargo at night"></div><figcaption>An Island-class ship working cargo at night.</figcaption></figure>
+      </div>
+    </div>
+    <div class="archive rv">
+      <figure><img src="assets/hist-captains.jpg" alt="Luis Noboa Naranjo with ship captains, 1960s"><figcaption>With ship captains, 1960s.</figcaption></figure>
+      <figure><img src="assets/hist-bridge.jpg" alt="Luis Noboa Naranjo on the bridge with the captain" style="object-position:50% 20%"><figcaption>On the bridge with the captain, c. 1990.</figcaption></figure>
+      <figure><img src="assets/hist-bonita-terminal.jpg" alt="The Bonita at a reefer terminal, 1970s"><figcaption>The <em>Bonita</em>, 1970s.</figcaption></figure>
+    </div>
+    <p class="sources">Sources: Roberts, <i>Empresarios ecuatorianos del banano</i> (pp. 172–175, 219–220); Rodolfo Pérez Pimentel; <i>Vistazo</i> no. 641 (5 May 1994).</p>
+  </div>
+</section>
+
+<section class="band">
+  <img src="assets/barrington-dusk.jpg" alt="">
+  <div class="wrap rv">
+    <h2>Space on the next sailing</h2>
+    <p>Tell us the cargo, the ports and the dates. Our team comes back with space and a rate.</p>
+    <a class="btn" href="#contact">Book space <span class="arr">→</span></a>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap contact">
+    <div class="rv">
+      <div class="kicker">Contact</div>
+      <h2>Let's move<br>your cargo</h2>
+      <div class="offices">
+        <div class="office"><b>Antwerp, Belgium · Headquarters</b><span>Commercial, fleet and crew management</span></div>
+        <div class="office"><b>Guayaquil, Ecuador</b><span>Port agency and South America operations</span></div>
+      </div>
+    </div>
+    <form id="quote" class="rv" novalidate>
+      <div><label for="f-name">Name</label><input id="f-name" name="name" required></div>
+      <div><label for="f-co">Company</label><input id="f-co" name="company"></div>
+      <div class="full"><label for="f-mail">Email</label><input id="f-mail" type="email" name="email" required></div>
+      <div><label for="f-dir">Direction</label>
+        <select id="f-dir" name="direction"><option>Northbound (to Europe)</option><option>Southbound (from Europe)</option></select></div>
+      <div><label for="f-cargo">Cargo</label>
+        <select id="f-cargo" name="cargo"><option>Bananas</option><option>Other fresh fruit</option><option>Frozen cargo</option><option>Wine / olive oil / food</option><option>Vehicles / machinery</option><option>Project or general cargo</option></select></div>
+      <div><label for="f-from">Load port</label><input id="f-from" name="from" placeholder="e.g. Puerto Bolívar"></div>
+      <div><label for="f-to">Discharge port</label><input id="f-to" name="to" placeholder="e.g. Vlissingen"></div>
+      <div class="full"><label for="f-msg">Volume, timing, notes</label><textarea id="f-msg" name="message" placeholder="Pallets, containers or units per sailing, temperature, start date"></textarea></div>
+      <div class="full"><button class="btn" type="submit">Send request <span class="arr">→</span></button></div>
+      <p class="form-msg" id="form-msg" aria-live="polite"></p>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <a class="brand" href="#top"><img src="assets/el-logo-192.png" alt=""><span><b>ECUADORIAN LINE</b><small>THE ECUADORIAN SEA CARRIERS S.A.</small></span></a>
+    <div class="social">
+      <a href="https://www.linkedin.com/company/ecuadorianline/" target="_blank" rel="noopener" aria-label="Ecuadorian Line on LinkedIn"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.1c.5-1 1.8-2 3.8-2 4 0 4.8 2.6 4.8 6.1V21h-4v-5.5c0-1.3 0-3-1.8-3s-2.1 1.4-2.1 2.9V21H9z"/></svg></a>
+    </div>
+  </div>
+  <div class="wrap group-line">
+    <p><b>A proud member of the Noboa Corporation.</b> Headquartered in Antwerp, Belgium · Specialty reefer service South America ⇄ Northern Europe · © <span id="yr"></span> Ecuadorian Line</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/d3@7.8.5/dist/d3.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/topojson-client@3.1.0/dist/topojson-client.min.js"></script>
+<script>
+const P = {
+  hamburg:{n:"Hamburg",c:[9.97,53.54],r:"Germany",d:"Discharge fruit · load European cargo"},
+  vlissingen:{n:"Vlissingen",c:[3.6,51.44],r:"Netherlands",d:"Discharge fruit · load European cargo"},
+  caribbean:{n:"Caribbean",c:[-68.9,12.1],r:"Island calls",d:"Discharge European cargo"},
+  panama:{n:"Panama Canal",c:[-79.7,9.1],r:"Transit",d:"Atlantic ⇄ Pacific"},
+  buenaventura:{n:"Buenaventura",c:[-77.07,3.88],r:"Colombia",d:"Discharge European cargo"},
+  guayaquil:{n:"Guayaquil",c:[-79.9,-2.25],r:"Ecuador",d:"Discharge · load fruit · transshipment hub",hub:1},
+  bolivar:{n:"Puerto Bolívar",c:[-80.0,-3.27],r:"Ecuador",d:"Load bananas · transshipment hub",hub:1},
+  chancay:{n:"Chancay",c:[-77.27,-11.58],r:"Peru",d:"Discharge European cargo · load fruit"},
+  callao:{n:"Callao",c:[-77.15,-12.05],r:"Peru",d:"Discharge European cargo · load fruit"},
+  paita:{n:"Paita",c:[-81.11,-5.08],r:"Peru",d:"Load avocados, grapes, berries, mangoes"}
+};
+const ROT = {
+  south:["hamburg","vlissingen","caribbean","panama","buenaventura","guayaquil","bolivar","chancay","callao"],
+  north:["callao","paita","panama","vlissingen","hamburg"]
+};
+const LANE = {
+  south:[[9.97,53.54],[8.3,54.0],[4.2,53.3],[3.6,51.44],[1.5,51.0],[-1.5,50.1],[-5.5,49.0],[-20,40],[-45,25],[-61,15],[-68.9,12.1],[-75,11],[-79.9,9.35],[-79.55,8.6],[-79.3,7.2],[-79.5,5],[-77.3,3.9],[-80.2,2.5],[-81.2,-0.5],[-80.3,-2.6],[-79.9,-2.25],[-80.3,-2.9],[-80.0,-3.27],[-81.4,-4.2],[-81.6,-6],[-79.5,-9.5],[-77.5,-11.4],[-77.27,-11.58],[-77.35,-11.9],[-77.15,-12.05]],
+  north:[[-77.15,-12.05],[-78.6,-11.4],[-80.8,-8],[-81.6,-5.6],[-81.11,-5.08],[-82,-3],[-81.8,1],[-80.5,5.5],[-79.2,7.4],[-79.55,8.6],[-79.9,9.35],[-77,12.6],[-72,16.5],[-60,22],[-35,36],[-15,45.5],[-6,48.6],[-2,49.7],[1.2,50.8],[3.6,51.44],[4.0,53.0],[7.8,54.05],[9.97,53.54]]
+};
+let dir="south", hl=()=>{};
+const COL={south:"#ff4a3d",north:"#f6c915"};
+
+function renderList(){
+  const ol=document.getElementById("rotation");
+  ol.innerHTML=""; ol.style.setProperty("--c",COL[dir]);
+  ROT[dir].forEach(k=>{
+    const p=P[k], li=document.createElement("li");
+    if(p.hub) li.className="hub"; li.dataset.k=k;
+    li.innerHTML=`<b>${p.n}</b><span>${p.r} · ${p.d}</span>`;
+    li.addEventListener("mouseenter",()=>hl(k,true));
+    li.addEventListener("mouseleave",()=>hl(k,false));
+    ol.appendChild(li);
+  });
+}
+document.querySelectorAll(".toggle button").forEach(b=>b.addEventListener("click",()=>{
+  dir=b.dataset.dir;
+  document.querySelectorAll(".toggle button").forEach(x=>x.setAttribute("aria-pressed",x===b));
+  renderList(); if(window.setDir) window.setDir(dir);
+}));
+renderList();
+
+async function drawMap(){
+  const box=document.getElementById("map"), msg=box.querySelector(".map-loading");
+  if(!window.d3||!window.topojson){msg.textContent="Map needs an internet connection.";return;}
+  let world;
+  try{ world=await d3.json("https://cdn.jsdelivr.net/npm/world-atlas@2.0.2/countries-50m.json"); }
+  catch(e){ msg.textContent="Map could not load."; return; }
+  const W=760,H=620, proj=d3.geoNaturalEarth1();
+  proj.fitExtent([[10,10],[W-10,H-10]],{type:"MultiPoint",coordinates:[[-94,-15],[22,58]]});
+  const path=d3.geoPath(proj);
+  box.innerHTML="";
+  const svg=d3.select(box).append("svg").attr("viewBox",`0 0 ${W} ${H}`).attr("role","img")
+    .attr("aria-label","Route map: Hamburg and Vlissingen through the Caribbean and Panama Canal to Colombia, Ecuador and Peru");
+  svg.append("path").datum(d3.geoGraticule10()).attr("d",path).attr("fill","none").attr("stroke","rgba(255,255,255,.05)");
+  svg.append("path").datum(topojson.feature(world,world.objects.countries)).attr("d",path)
+    .attr("fill","var(--land)").attr("stroke","var(--land-stroke)").attr("stroke-width",.6);
+  const line=d3.line().curve(d3.curveCatmullRom.alpha(.5)).x(d=>proj(d)[0]).y(d=>proj(d)[1]);
+  const lanes={};
+  ["north","south"].forEach(k=>{
+    const p=svg.append("path").attr("d",line(LANE[k])).attr("fill","none").attr("stroke",COL[k])
+      .attr("stroke-width",2.8).attr("stroke-linecap","round");
+    const L=p.node().getTotalLength();
+    p.attr("stroke-dasharray",`${L} ${L}`).attr("stroke-dashoffset",L)
+     .transition("draw").delay(k==="south"?200:1400).duration(2600).ease(d3.easeCubicInOut).attr("stroke-dashoffset",0)
+     .on("end",function(){ if(k==="north") d3.select(this).attr("stroke-dasharray","7 6"); else d3.select(this).attr("stroke-dasharray",null); });
+    lanes[k]=p;
+  });
+  const g=svg.append("g"), nodes={};
+  const lp={hamburg:[8,-8,"start"],vlissingen:[-9,4,"end"],caribbean:[8,-8,"start"],panama:[8,-6,"start"],buenaventura:[9,4,"start"],guayaquil:[8,-2,"start"],bolivar:[8,10,"start"],paita:[-9,4,"end"],chancay:[9,0,"start"],callao:[9,12,"start"]};
+  Object.entries(P).forEach(([k,p])=>{
+    const [x,y]=proj(p.c), l=lp[k];
+    const n=g.append("g").attr("transform",`translate(${x},${y})`).style("cursor","pointer");
+    n.append("circle").attr("r",p.hub?6:4.5).attr("fill",p.hub?"#f6c915":"#fff").attr("stroke","#070c26").attr("stroke-width",1.6);
+    n.append("text").attr("x",l[0]).attr("y",l[1]).attr("text-anchor",l[2]).text(p.n)
+      .attr("font-family","Inter").attr("font-weight",600).attr("font-size",12.5).attr("fill","#fff")
+      .attr("paint-order","stroke").attr("stroke","#0d1747").attr("stroke-width",3.5);
+    n.on("mouseenter",()=>hl(k,true)).on("mouseleave",()=>hl(k,false));
+    nodes[k]=n;
+  });
+  window.setDir=d=>{
+    lanes.south.transition("op").duration(300).attr("opacity",d==="south"?1:.15);
+    lanes.north.transition("op").duration(300).attr("opacity",d==="north"?1:.15);
+    Object.entries(nodes).forEach(([k,n])=>n.transition("op").duration(300).attr("opacity",ROT[d].includes(k)?1:.3));
+  };
+  hl=(k,on)=>{
+    nodes[k].select("circle").transition().duration(150).attr("r",on?9:(P[k].hub?6:4.5));
+    document.querySelectorAll(`#rotation li[data-k="${k}"]`).forEach(li=>li.classList.toggle("active",on));
+  };
+  window.setDir(dir);
+  const lg=document.createElement("div"); lg.className="map-legend";
+  lg.innerHTML='<span><i style="background:#ff4a3d"></i>Southbound</span><span><i style="background:repeating-linear-gradient(90deg,#f6c915 0 6px,transparent 6px 9px)"></i>Northbound</span><span><i style="background:#f6c915;height:9px;width:9px;border-radius:50%"></i>Hub</span>';
+  box.appendChild(lg);
+}
+drawMap();
+
+// hero video: lighter file on phones, skipped for data-saver or reduced motion
+window.addEventListener("load",()=>{
+  const v=document.getElementById("hero-video"); if(!v) return;
+  const save=(navigator.connection&&navigator.connection.saveData)||matchMedia("(prefers-reduced-motion: reduce)").matches;
+  if(save) return;
+  v.src=window.innerWidth<900?"assets/hero-640.mp4":"assets/hero.mp4";
+  v.play().catch(()=>{});
+});
+// header + menu
+const hdr=document.getElementById("hdr");
+const onScroll=()=>hdr.classList.toggle("solid",window.scrollY>40);
+window.addEventListener("scroll",onScroll,{passive:true}); onScroll();
+const mt=document.querySelector(".menu-toggle"), nav=document.querySelector("nav.main");
+mt.addEventListener("click",()=>{const o=nav.classList.toggle("open");mt.setAttribute("aria-expanded",o);hdr.classList.add("solid")});
+nav.querySelectorAll("a").forEach(a=>a.addEventListener("click",()=>nav.classList.remove("open")));
+
+// reveal on scroll (content stays visible if this never runs)
+document.documentElement.classList.add("js");
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}}),{threshold:.12,rootMargin:"0px 0px -40px 0px"});
+document.querySelectorAll(".rv").forEach((el,i)=>{el.style.transitionDelay=((i%5)*70)+"ms";io.observe(el)});
+
+// form: opens a pre-filled email to the commercial inbox
+const QUOTE_EMAIL="info@ecuadorianlines.com";
+document.getElementById("yr").textContent=new Date().getFullYear();
+document.getElementById("quote").addEventListener("submit",e=>{
+  e.preventDefault();
+  const f=e.target, m=document.getElementById("form-msg");
+  if(!f.name.value.trim()||!/^\S+@\S+\.\S+$/.test(f.email.value)){m.textContent="Please add your name and a valid email.";return;}
+  const body=["Name: "+f.name.value,"Company: "+f.company.value,"Email: "+f.email.value,"Direction: "+f.direction.value,"Cargo: "+f.cargo.value,"Load port: "+f.from.value,"Discharge port: "+f.to.value,"","Notes:",f.message.value].join("
+");
+  window.location.href="mailto:"+QUOTE_EMAIL+"?subject="+encodeURIComponent("Space request: "+f.cargo.value+" ("+f.direction.value+")")+"&body="+encodeURIComponent(body);
+  m.textContent="Your email app should open with the request ready to send. If it doesn't, write to "+QUOTE_EMAIL+".";
+});
+</script>
+</body>
+</html>
